@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 body {
     height: 100vh;
     display: flex;
@@ -7,12 +10,12 @@ body {
     background-color: rgba(0, 0, 0);
 }
 
-.main-container img {
+.main-container {
     flex: 0 0 auto;
     position: relative;
     overflow: hidden;
     border-radius: 1em;
-    width: 70vw;
+    width: 80vw;
     height:60vh;
 }
 
@@ -21,25 +24,53 @@ body {
     position: absolute;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: inherit;
+}
+
 form {
-    position: absolute;
+    height: 75%;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 12.5%;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
     color: azure;
     display: flex;
+    font-family: 'Cinzel', 'Arial';
+    font-weight: 600;
 }
 
-input[type=text] {
+input[type=text], input[type=email], input[type=tel], textarea {
     display: flex;
-    height: 3em;
+    height: 2em;
     border-radius: 8px;
+    text-align:left;
+    border: solid #72a4c7;
+    background-color: #233443 ;
 }
 
 ::placeholder {
-    font-size: 2em;
-    padding-bottom: 0;
+    font-size: 1em;
+    color: rgb(186, 192, 192);
+
 }
+
+
+.names, .row2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+
 
 
 
