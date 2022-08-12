@@ -34,8 +34,9 @@ img {
 form {
     height: 75%;
     max-width: 50%;
-    position: relative;
+    position: absolute;
     left: 22%;
+    right: 22%;
     top: 40%;
     display: flex;
     flex-direction: column;
@@ -51,23 +52,29 @@ label {
 input[type=text], input[type=email], input[type=tel], input[type=password], textarea {
     display: flex;
     height: 2em;
+    width: 12em;
     border-radius: 8px;
     text-align:left;
     border: solid #72a4c7 2px;
     background-color: #233443 ;
     color: azure;
+    font-family: 'Cinzel', 'Arial';
+    font-weight: 800;
+    font-size: 1em;
 }
 
 ::placeholder {
     font-size: 1em;
-    color: rgb(186, 192, 192);
+    /* color: rgb(186, 192, 192); */
+    color: #233443;
 }
 
 
 .names, .row2, .passwords {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 2em;
+    gap: 2em;
 }
 
 input:hover{
@@ -78,8 +85,40 @@ input:focus {
     background-color: #5a6874;
     border-color: gold;
     outline: none;
-
 }
+
+p {
+    font-size: 2em;
+    text-shadow: 3px 3px black;
+    color: white;
+}
+
+.pcont {
+    height: 20%;
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+}
+
+button[type=submit] {
+    border-radius: 8px;
+    text-align:center;
+    border: solid #72a4c7 2px;
+    background-color: #233443 ;
+    color: azure;
+    font-family: 'Cinzel', 'Arial';
+    font-weight: 800;
+    font-size: 1em;
+    width: fit-content;
+    padding:8px;
+    position: relative;
+    left: 30%;
+    margin-top: 2em;
+}
+
+
+
 
 
 
