@@ -33,10 +33,10 @@ img {
 
 form {
     height: 75%;
-    width: 60%;
+    max-width: 50%;
     position: relative;
-    left: 20%;
-    top: 12.5%;
+    left: 22%;
+    top: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -48,26 +48,37 @@ label {
     font-weight: 600;
 }
 
-input[type=text], input[type=email], input[type=tel], textarea {
+input[type=text], input[type=email], input[type=tel], input[type=password], textarea {
     display: flex;
     height: 2em;
     border-radius: 8px;
     text-align:left;
-    border: solid #72a4c7;
+    border: solid #72a4c7 2px;
     background-color: #233443 ;
+    color: azure;
 }
 
 ::placeholder {
     font-size: 1em;
     color: rgb(186, 192, 192);
-
 }
 
 
-.names, .row2 {
+.names, .row2, .passwords {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2em;
+}
+
+input:hover{
+    border: 2px solid whitesmoke;
+}
+
+input:focus {
+    background-color: #5a6874;
+    border-color: gold;
+    outline: none;
+
 }
 
 
