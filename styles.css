@@ -79,12 +79,14 @@ input[type=text], input[type=email], input[type=tel], input[type=password], text
 
 input:hover{
     border: 2px solid whitesmoke;
+    transition: 0.5s;
 }
 
 input:focus {
     background-color: #5a6874;
     border-color: gold;
     outline: none;
+    transition: 0.5s;
 }
 
 p {
@@ -111,11 +113,23 @@ button[type=submit] {
     font-weight: 800;
     font-size: 1em;
     width: fit-content;
-    padding:8px;
+    padding:10px;
     position: relative;
     left: 30%;
     margin-top: 2em;
 }
+
+input:valid {
+    border: solid #3b9716 2px;
+    transition: 1s;
+}
+
+button:hover {
+    border: 2px solid rgba(255, 240, 24, 0.9);
+    color: rgba(255, 240, 24, 0.75); ;
+    transition: 0.5s;
+}
+
 
 
 
