@@ -19,42 +19,42 @@
             <div class="pcont">
                 <p>Gather resources. Build your Empire. Conquer your enemies. Join today!</p>
             </div> 
+            <form action="/my-first-form-page" method="post">
+                <div class="names">
+                    <div class="firstname">
+                         <label for="firstname">First Name</label>
+                         <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="lastname">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="user@aoe.com" required>
+                    </div>
+    
+                    <div class="phone">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="([0-9]{3}[0-9]{3}[0-9]{4})|([0-9]{3}-[0-9]{3}-[0-9]{4})" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                    </div>
+                </div>
+                <div class="passwords">
+                    <div class="pass">
+                        <label for="user_password">Password</label>
+                        <input type="password" id = "user_password" name="password" placeholder="Password" required minlength="8">
+                    </div>
+                    <div class="confirm">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required minlength="8">
+                    </div>
+                </div>
+                <button type="submit">Create Your Account</button>
+            </form> 
+            <footer class="disclaimer">*This is not a real form and is not associated with Microsoft or the Age of Empires Franchise in any way.</footer>
         </div>
-        <form action="/my-first-form-page" method="post">
-            <div class="names">
-                <div class="firstname">
-                     <label for="firstname">First Name</label>
-                     <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
-                </div>
-                <div class="lastname">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
-                </div>
-            </div>
-            <div class="row2">
-                <div class="email">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="user@aoe.com" required>
-                </div>
-
-                <div class="phone">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="([0-9]{3}[0-9]{3}[0-9]{4})|([0-9]{3}-[0-9]{3}-[0-9]{4})" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
-                </div>
-            </div>
-            <div class="passwords">
-                <div class="pass">
-                    <label for="user_password">Password</label>
-                    <input type="password" id = "user_password" name="password" placeholder="Password" required minlength="8">
-                </div>
-                <div class="confirm">
-                    <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
-                </div>
-            </div>
-            <button type="submit">Create Your Account</button>
-            </div>
-        </form> 
     </div>
 </body>
 </html>   
